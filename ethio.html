@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EthioTelecom - Digital SIM Services</title>
+    <link rel="stylesheet" href="telecom.css">
+</head>
+<script src="yes.je"> yes.js</script>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="ethio.jpg" alt="Ethio Telecom Logo">
+        
+        <nav>
+            <a href="#">Home</a>
+            <a href="#packages">Packages</a>
+            <a href="#sim-services" class="btn-highlight">SIM Services</a>
+            <a href="#about">About</a>
+            <a href="#contact" class="btn-nav">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+   <!-- If Service Type is Transfer Ownership -->
+            <div id="transfer-fields" style="display: none;">
+                <div class="form-group">
+                    <label for="old-owner-id">Current Owner's Digital ID (Fayda):</label>
+                    <input type="text" id="old-owner-id" placeholder="የቀድሞውን ባለቤት መታወቂያ ቁጥር ያስገቡ">
+                </div>
+                <div class="form-group">
+                    <label for="approval-code">Transfer Approval Code (SMS Code sent to old owner):</label>
+                    <input type="text" id="approval-code" placeholder="Transfer Approval Code (SMS Code sent to old owner)">
+                </div>
+            </div>
+        <form class="sim-form">
+            <!-- Service Type Selection -->
+            <div class="form-group">
+                <label for="service-type">Select Service Type:</label>
+                <select id="service-type" required>
+                    <option value="">-- Choose Service --</option>
+                    <option value="new">Request New SIM</option>
+                    <option value="replacement">Replace Lost/Damaged SIM</option>
+                    <option value="transfer">Transfer SIM Ownership</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" placeholder="Enter your full name as on Digital ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="digital-id">Digital ID (Fayda Number):</label>
+                <input type="text" id="digital-id" placeholder="Enter your Digital ID number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter target phone number (09...)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sim-type">SIM Type:</label>
+                <select id="sim-type" required>
+                    <option value="">-- Select SIM Type --</option>
+                    <option value="physical">Physical SIM Card</option>
+                    <option value="esim">eSIM</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Verify & Process Request</button>
+        </form>
+    </section>
+
+</body>
+</html>
